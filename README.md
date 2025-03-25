@@ -58,18 +58,20 @@ One of the main challenges was ensuring the accuracy of the AI models when conve
 
 1. Clone the repository
 
-2. Add your Open-AI API Key  at [app.py](https://github.com/ewfx/gaidp-rookies/blob/main/code/src/app/app.py#L26)
+2. Demo Regualatory Rules word and data.csv is present in artifacts/demo
 
-3. Navigate to directory
+3. Add your Open-AI API Key  at [app.py](https://github.com/ewfx/gaidp-rookies/blob/main/code/src/app/app.py#L26)
+
+4. Navigate to directory
    ```sh
    cd code/src/app
    ```
    
-4. Install dependencies
+5. Install dependencies
    ```sh
    pip install -r requirements.txt
    ```
-5. Run the project
+6. Run the project
    ```sh
    python app.py
    ```
