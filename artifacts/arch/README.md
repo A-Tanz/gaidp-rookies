@@ -1,3 +1,3 @@
-Replace this file with a document that describes the architecture and design of your solution architecture. This may include
-    - An architecture drawing exported into a png/jpeg format image
-    - A document in pdf or md format that describes your solution
+# Flow 
+
+![image](https://github.com/user-attachments/assets/6f8d8456-7e54-40c1-8680-17f711d1ec5c)
