@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Processed Data</title>
+    <style>
+      body {
+        background-color: #180a0a;
+        color: #fff;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+      }
+
+      .container {
+        max-width: 900px;
+        margin: 0 auto;
+        background-color: #2c1e1e;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      h1 {
+        color: #f4f4f4;
+        font-size: 28px;
+      }
+
+      p {
+        color: #ddd;
+        font-size: 16px;
+      }
+
+      a {
+        color: #ff5733;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .flagged-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      .flagged-table th,
+      .flagged-table td {
+        padding: 12px;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+
+      .flagged-table th {
+        background-color: #3498db;
+        color: white;
+      }
+
+      .flagged-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      .flagged-table tr:hover {
+        background-color: #f1f1f1;
+      }
+
+      .highlight-row {
+        background-color: #f8d7da;
+      }
+
+      .btn-home {
+        background-color: #fff;
+        color: #000;
+        border-color: #fff;
+        display: inline-block;
+        padding: 8px 16px;
+        text-align: center;
+        margin-top: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+      }
+
+      .btn-home:hover {
+        background-color: #f1f1f1;
+        color: #000;
+        text-decoration: none; /* This removes the underline on hover */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Data Profiling Completed</h1>
+      <p>
+        The data has been profiled according to the regulatory rules. You can
+        download the processed CSV file below:
+      </p>
+
+      <!-- Provide a download link for the CSV file -->
+      <a
+        href="{{ url_for('download_csv', filename='processed_data.csv') }}"
+        class="btn-home"
+        download
+        >Download Processed CSV</a
+      >
+
+      <p>Want more?</p>
+      <p><a href="{{ url_for('view_flagged_data') }}">See Flagged Data</a></p>
+
+      <!-- Home Button at the Bottom -->
+      <a href="/" class="btn-home">Home</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+.container-fluid {
+  padding: 7% 15%;
+}
+.container-fluid-second {
+  padding: 0% 15%;
+}
+body {
+  font-family: "Montserrat-light", sans-serif;
+  text-align: center;
+}
+#title .container-fluid {
+  padding: 3% 15% 1%;
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat-Black", sans-serif;
+}
+.colored-section {
+  background-color: #180a0a;
+  color: #fff;
+}
+.clrbtn {
+  background-color: #180a0a;
+  color: #fff;
+}
+.clrbtn:hover {
+  background-color: #180a0a;
+  color: #fff;
+}
+.bottom-container {
+  background-color: #180a0a;
+  padding: 50px 0 20px;
+  margin-top: 50px;
+}
+.footer-link:hover {
+  padding: 20px;
+  margin-top: 30px;
+  color: #e0deca;
+  text-decoration: none;
+}
+.footer-link {
+  padding: 20px;
+  margin-top: 30px;
+  color: #fff;
+  text-decoration: none;
+}
+.white-section {
+  background-color: #fff;
+}
+.section-heading {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+.big-heading {
+  font-size: 3.5rem;
+  font-weight: 900;
+  line-height: 1.5;
+}
+.feature-title {
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+p {
+  color: #8f8f8f;
+}
+table {
+  color: #8f8f8f;
+}
+/* Navigation Bar */
+.navbar {
+  padding: 0 0 4.5rem;
+}
+.navbar-brand {
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.nav-item {
+  padding: 0 18px;
+}
+.chb {
+  background-color: #180a0a;
+  color: #fff;
+}
+.chb:hover {
+  background-color: #180a0a;
+  color: #fff;
+}
+.card:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s;
+}
+.nav-link {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Light";
+}
+/* download buttons */
+.download-button {
+  margin: 5% 3% 5% 0;
+}
+/* title image  */
+.title-image {
+  width: 25%;
+  transform: rotate(15deg);
+  position: absolute;
+  right: 7%;
+  top: 15%;
+}
+.icon {
+  width: 20%;
+}
+#features {
+  position: relative;
+  z-index: 1;
+}
+.features {
+  padding: 5%;
+}
+.second {
+  padding: 5%;
+}
+#testimonials {
+  color: #fff;
+}
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+.testimonial-text {
+  font-size: 3rem;
+  font-weight: 800;
+  line-height: 1.5;
+}
+@media (max-width: 1028px) {
+  .title-image {
+    position: static;
+    width: 75%;
+    transform: rotate(0);
+  }
+  #title {
+    text-align: center;
+  }
+}

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>PROFILER</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/styles.css') }}"
+    />
+    <link
+      rel="icon"
+      href="{{ url_for('static',filename='images/favicon.ico') }}"
+    />
+    <script
+      src="https://kit.fontawesome.com/a9cfdab3ef.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"
+      integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" href="" />
+  </head>
+  <body>
+    <section id="title" class="colored-section">
+      <div class="container-fluid">
+        <!-- Nav Bar -->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+          <a class="navbar-brand" href="/">PRO-FILER</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/test">Test</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Title -->
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h1 class="big-heading">Profile Data with your Rules!</h1>
+            <br /><br /><br /><br />
+          </div>
+          <div class="col-lg-6">
+            <img
+              class="title-image"
+              src="{{ url_for('static', filename = 'images/fpic.png') }}"
+              alt="clown"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="white-section">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="feature-box col-lg-6">
+            <img
+              src="{{ url_for('static', filename = 'images/tick.png') }}"
+              class="icon"
+              alt="tick"
+            />
+            <h3 class="feature-title">Easy to use.</h3>
+            <p>Easy to undestand and get along</p>
+          </div>
+          <div class="feature-box col-lg-6">
+            <img
+              src="{{ url_for('static', filename = 'images/hund.png') }}"
+              class="icon"
+              alt="hund"
+            />
+            <h3 class="feature-title">Tried and Tested</h3>
+            <p>Trained on a huge dataset for better results.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="testimonials" class="colored-section">
+      <div
+        id="testimonial-carousel"
+        class="carousel slide"
+        data-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active container-fluid">
+            <h2 class="testimonial-text">
+              Upload the regulatory rules and data for the Profiling
+            </h2>
+            <img
+              class="testimonial-image"
+              src="{{ url_for('static', filename = 'images/men.jpg') }}"
+              alt="men-profile"
+            />
+          </div>
+          <div class="carousel-item container-fluid">
+            <h2 class="testimonial-text">
+              Ask our AI assisted bot for advices on Data Profiling.
+            </h2>
+            <img
+              class="testimonial-image"
+              src="{{ url_for('static', filename = 'images/women.jpg') }}"
+              alt="lady-profile"
+            />
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#testimonial-carousel"
+          role="button"
+          data-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#testimonial-carousel"
+          role="button"
+          data-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
+    <section id="second" class="white-section">
+      <div class="second container-fluid">
+        <h2 class="section-heading">About Data Profiling</h2>
+        <p>
+          Regulatory reporting in the banking sector invloves compiling vast
+          amounts of data to meet COmpliance requirements.
+          <br />
+          Data Profiling ensures that the reported data aligns with regulatory
+          reporting instructions. This involves manually defining profiling
+          rules, perform adaptive risk scoring, and suggest remediation actions
+          based on regulatory reporting instructions.
+        </p>
+        <br />
+        <p>Team Rookies</p>
+        <center>
+          <table>
+            <tr>
+              <td>Afraz Tanvir</td>
+            </tr>
+            <tr>
+              <td>Prakhar Agarwal</td>
+            </tr>
+            <tr>
+              <td>Uday Goel</td>
+            </tr>
+            <tr>
+              <td>Priyal Mittal</td>
+            </tr>
+          </table>
+          <br />
+          <p>Click below to see the synthetic data creation process.</p>
+          <a
+            href="https://colab.research.google.com/drive/1ltRr-NhJ7EFN0UqElzTuuVfJ9VIGDDFw?usp=sharing"
+            target="_blank"
+          >
+            <button class="btn clrbtn">Visit Collab</button>
+          </a>
+        </center>
+        <br />
+      </div>
+    </section>
+    <section id="footer" class="colored-section">
+      <footer class="bottom-container">
+        <a
+          class="footer-link"
+          href="https://www.linkedin.com/in/afraz-tanvir-150323228"
+          >Linkedin</a
+        ><i class="fab fa-linkedin"></i> <br /><br />
+        <p class="copyright">© 2025 Afraz Tanvir.</p>
+      </footer>
+    </section>
+  </body>
+</html>

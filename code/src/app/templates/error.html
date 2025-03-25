@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Error - Profiling Rules Mismatch</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #e74c3c; /* Set background to red */
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #e74c3c;
+        font-size: 24px;
+      }
+      p {
+        color: #333;
+        font-size: 16px;
+      }
+      .highlight {
+        color: #e67e22;
+        font-weight: bold;
+      }
+      .error-info {
+        background-color: #f8d7da;
+        padding: 15px;
+        border: 1px solid #f5c6cb;
+        border-radius: 5px;
+        color: #721c24;
+      }
+      a {
+        color: #3498db;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Error: Profiling Rules Mismatch</h1>
+      <div class="error-info">
+        <p>
+          There was an issue with the profiling rules you provided. Profiling
+          rules must be in the domain of the data, meaning:
+        </p>
+        <ul>
+          <li>
+            The predicates (conditions) in the rules should correspond to the
+            column names in your data.
+          </li>
+          <li>
+            Please make sure that the column names mentioned in the rules exist
+            in the uploaded data.
+          </li>
+        </ul>
+        <p class="highlight">Example:</p>
+        <pre class="highlight">
+# If the data contains columns 'age', 'income', and 'location', the profiling rule should reference these columns directly.
+# For example:
+# - 'age > 30'
+# - 'income < 50000'
+# - 'location == "New York"'
+            </pre
+        >
+        <p>
+          If you continue to experience issues, please double-check the rules
+          and try again.
+        </p>
+        <p>
+          You can
+          <a href="{{ url_for('test_page') }}"
+            >go back and upload the correct files</a
+          >
+          or refer to the documentation for more information.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
