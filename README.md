@@ -21,6 +21,7 @@ Data Profiling using Gen-AI Regulatory reporting in the banking sector invloves 
 ## 🎥 Demo
 
 🔗 [Live Demo](#) (if applicable)  
+🔗 [PPT](https://docs.google.com/presentation/d/1L7SD3AG9k28GY7uiU3UDQT14vMVzGmoU/edit?usp=sharing&ouid=111480780257033541464&rtpof=true&sd=true) 
 📹 [Video Demo](#) (if applicable)  
 🖼️ Screenshots:
 
