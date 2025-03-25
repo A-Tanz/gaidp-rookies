@@ -58,16 +58,18 @@ One of the main challenges was ensuring the accuracy of the AI models when conve
 
 1. Clone the repository
 
-2. Navigate to directory
+2. Add your Open-AI API Key  at [app.py](https://github.com/ewfx/gaidp-rookies/blob/main/code/src/app/app.py#L26)
+
+3. Navigate to directory
    ```sh
    cd code/src/app
    ```
    
-3. Install dependencies
+4. Install dependencies
    ```sh
    pip install -r requirements.txt
    ```
-4. Run the project
+5. Run the project
    ```sh
    python app.py
    ```
@@ -93,4 +95,7 @@ One of the main challenges was ensuring the accuracy of the AI models when conve
 ## 👥 Team
 
 - **Afraz Tanvir** - [GitHub](https://github.com/A-Tanz) | [LinkedIn](https://www.linkedin.com/in/afraz-tanvir/)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+- **Prakhar Sharma** - [GitHub](#) | [LinkedIn](#)
+- **Uday Goel** - [GitHub](#) | [LinkedIn](#)
+- **Priyal Mittal** - [GitHub](#) | [LinkedIn](#)
+- **Aayushi** - [GitHub](#) | [LinkedIn](#)
