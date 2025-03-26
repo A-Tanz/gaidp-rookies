@@ -19,10 +19,9 @@
 Data Profiling using Gen-AI Regulatory reporting in the banking sector invloves compiling vast amounts of data to meet Compliance requirements. Data Profiling ensures that the reported data aligns with regulatory reporting instructions. This involves manually defining profiling rules, perform adaptive risk scoring, and suggest remediation actions based on regulatory reporting instructions.
 
 ## 🎥 Demo
-
-🔗 [Live Demo](#) (if applicable)  
+ 
 🔗 [PPT](https://docs.google.com/presentation/d/1L7SD3AG9k28GY7uiU3UDQT14vMVzGmoU/edit?usp=sharing&ouid=111480780257033541464&rtpof=true&sd=true)  <br>
-📹 [Video Demo](#) (if applicable)  
+📹 [Video Demo](https://drive.google.com/file/d/1tNhohFyZdEGImd0y0OuetjBQdHywRBxh/view?usp=sharing) 
 🖼️ Screenshots:
 
 ![image](https://github.com/user-attachments/assets/aac9fa9f-2eb7-4852-92e7-3ebb3130af66)
